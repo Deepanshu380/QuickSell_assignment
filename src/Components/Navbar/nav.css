@@ -1,0 +1,106 @@
+
+
+.navbar {
+  background-color: #ffffff;
+ 
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  height: 10vh;
+
+}
+
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown-toggle {
+  background-color: transparent;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width:20rem;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 3s ease, visibility 2s linear 0.3s;
+}
+
+.dropdown-menu.show {
+  opacity: 1;
+  visibility: visible;
+  transition: opacity 0.3s ease, visibility 0s linear;
+}
+
+.dropdown-menu a {
+  color: gray;
+  text-decoration: none;
+  padding: 5px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdown-menu a span{
+    flex-grow: 1;
+}
+
+.nested-dropdown {
+  margin-left: auto; 
+}
+
+.custom-select {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none; 
+  background-image: url('data:image/svg+xml,\<svg fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" height="16" width="16"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path></svg>');
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 20px);
+  background-position-y: center;
+  cursor: pointer;
+}
+
+.custom-select:hover {
+  border-color: #999;
+}
+
+.custom-select:focus {
+  outline: none;
+  border-color: #333;
+}
+
+.text{
+    font-size: 1rem;
+    padding:0.3rem;
+    border:0.5px solid gray;
+    border-radius: 0.1rem;
+}
+
+@media screen and (max-width: 768px) {
+
+  .dropdown {
+    width: 100%;
+    text-align: left;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    text-align: left;
+    padding: 10px 20px;
+  }
+
+}

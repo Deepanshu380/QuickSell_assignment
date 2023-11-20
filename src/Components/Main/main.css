@@ -1,0 +1,35 @@
+
+.main{
+   height: 83vh;
+   min-width: 130rem;
+   max-width: max-content;
+    background-color: #f4f5f8;
+    display: flex;
+    justify-content: space-between;
+    overflow-x:scroll;
+}
+
+
+.main-heading{
+     background-color: #f4f5f8;
+    display: flex;
+    width:70rem;
+    flex-direction: column;
+    overflow-y:hidden;
+}
+
+
+.main::-webkit-scrollbar{
+    display: none;
+}
+
+.card-display{
+    overflow-y: scroll;
+}
+
+.card-display::-webkit-scrollbar {
+  display: none;
+}
+.main-heading::-webkit-scrollbar {
+  display: none;
+}
